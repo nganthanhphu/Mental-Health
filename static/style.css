@@ -1,11 +1,10 @@
-/* Reset & base */
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: #eef2f6; /* Lighter background */
+    background: #eef2f6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +26,6 @@ body {
     overflow: hidden;
 }
 
-/* Header */
 .chat-header {
     background: linear-gradient(135deg, #007bff, #00b4d8);
     color: rgb(18, 33, 94);
@@ -36,20 +34,22 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-/* Styling for the logo in the chat header */
+
 .bot-header-logo {
     width: 60px;
     height: 50px;
-    border-radius: 50%; /* Optional: to make the logo circular */
+    border-radius: 50%;
 }
+
 .message.bot .bot-chat-logo {
     width: 28px;
     height: 28px;
-    border-radius: 50%; /* Optional: to make the logo circular */
+    border-radius: 50%;
     align-self: flex-end;
     flex-shrink: 0;
     margin-right: 8px;
 }
+
 .bot-info {
     display: flex;
     align-items: center;
@@ -67,18 +67,16 @@ body {
     font-weight: 600;
 }
 
-/* Chatbox */
 .chatbox {
     flex-grow: 1;
     padding: 20px;
     overflow-y: auto;
-    background: #f0f2f5; /* Messenger background color */
+    background: #f0f2f5;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Messages */
 .message {
     display: flex;
     align-items: flex-end;
@@ -97,12 +95,12 @@ body {
     font-size: 28px;
     align-self: flex-end;
     flex-shrink: 0;
-    margin-right: 8px; /* Space between icon and bubble */
-    color: #888; /* Icon color */
+    margin-right: 8px;
+    color: #888;
 }
 
 .message.user .icon {
-    display: none; /* Hide user's icon for a cleaner look */
+    display: none;
 }
 
 .message .text-bubble {
@@ -115,19 +113,17 @@ body {
 }
 
 .message.user .text-bubble {
-    background: #007bff; /* Messenger blue */
+    background: #007bff;
     color: white;
     border-bottom-right-radius: 4px;
 }
 
 .message.bot .text-bubble {
-    background: #e5e5ea; /* Messenger grey */
+    background: #e5e5ea;
     color: #1c1e21;
     border-bottom-left-radius: 4px;
 }
 
-
-/* Input area */
 .input-area {
     display: flex;
     align-items: center;
@@ -164,6 +160,7 @@ input[type="text"]:focus {
     align-items: center;
     justify-content: center;
 }
+
 #btnRecord{
     background: transparent;
     color: #007bff;
@@ -183,13 +180,16 @@ button:disabled {
     color: #c0c0c0;
     cursor: not-allowed;
 }
+
 button:hover:not(:disabled) {
     color: #0056b3;
 }
+
 .listening{
     color:red;
     animation: pulse 1.5s infinite;
 }
+
 @keyframes pulse {
     0% {
         transform: scale(1);
